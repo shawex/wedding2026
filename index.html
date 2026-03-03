@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наталья и Олег | Приглашение на свадьбу</title>
+  <meta
+    name="description"
+    content="Приглашение на свадьбу Натальи и Олега. 21 марта, Ресторан «Кубик», Якутск."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  >
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body { font-family: "Cormorant Garamond", serif; background: #f8f2ea; color: #3f3026; }
+    .music-toggle { position: fixed; right: 12px; top: 12px; z-index: 20; }
+    .hero { max-width: 1024px; margin: 0 auto; padding: 92px 16px 40px; text-align: center; }
+    .hero__title { margin: 12px 0 0; line-height: 0.95; }
+    .hero__photo-wrap { width: min(420px, 100%); margin: 24px auto 0; overflow: hidden; border-radius: 24px; }
+    .hero__photo { display: block; width: 100%; height: auto; }
+  </style>
+  <link rel="stylesheet" href="./styles.css?v=20260303-12">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+    <span class="music-toggle__icon" aria-hidden="true">♪</span>
+    <span class="music-toggle__label">Включить свадебную музыку</span>
+  </button>
+
+  <audio id="weddingMusic" loop preload="none">
+    <source src="./audio/bi-2-molitva-14.mp3" type="audio/mpeg">
+  </audio>
+
+  <header class="hero reveal" id="top">
+    <p class="hero__kicker">wedding day</p>
+    <h1 class="hero__title">Наталья <span>и</span> Олег</h1>
+    <p class="hero__meta">21 марта 2026</p>
+    <p class="hero__meta hero__meta--accent">Ресторан «Кубик», Якутск</p>
+    <div class="hero__photo-wrap">
+      <img class="hero__photo" src="./img/optimized/paint2.jpg" alt="Наталья и Олег">
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section reveal" id="story">
+      <h2 class="section__title">Дорогие друзья и родные!</h2>
+      <p class="section__text">
+        21 марта состоится день, который станет началом нашей семейной истории.
+        Мы с радостью приглашаем вас разделить этот праздник любви вместе с нами в ресторане «Кубик».
+        Ваше присутствие - самый главный подарок для нас.
+      </p>
+      <div class="collage">
+        <img src="./img/optimized/DSC06246.jpg" alt="Фотография Натальи и Олега 1">
+        <img src="./img/optimized/DSC06267.jpg" alt="Фотография Натальи и Олега 2">
+        <img src="./img/optimized/poto1.jpg" alt="Фотография Натальи и Олега 3">
+        <img src="./img/optimized/hero-main.jpg" alt="Фотография Натальи и Олега 4">
+      </div>
+      
+    </section>
+
+    <section class="section reveal" id="timing">
+      <h2 class="section__title">Тайминг дня</h2>
+      <ul class="timeline">
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T16:00:00+09:00">16:00</time>
+          <p class="timeline__event">Сбор гостей</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T17:00:00+09:00">17:00</time>
+          <p class="timeline__event">Начало торжества</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T21:00:00+09:00">21:00</time>
+          <p class="timeline__event">Праздничный торт</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T23:00:00+09:00">23:00</time>
+          <p class="timeline__event">Завершение вечера</p>
+        </li>
+      </ul>
+      <p class="section__hint">
+        Будем рады, если вы приедете к началу сбора гостей, чтобы ничего не пропустить.
+      </p>
+    </section>
+
+    <section class="section reveal" id="location">
+      <h2 class="section__title">Место проведения</h2>
+      <p class="section__text section__text--center section__text--strong">Ресторан «Кубик»</p>
+      <p class="section__text section__text--center">г. Якутск, улица Аржакова, дом 10</p>
+      <p class="section__text">
+        Мы хотим провести этот вечер в тёплой взрослой атмосфере, поэтому праздник планируется без детей.
+        Надеемся на ваше понимание.
+      </p>
+      <img class="mood-photo" src="./photos_preview/mood.jpeg" alt="Атмосфера места проведения">
+
+      
+      <p class="section__text section__text--center">
+        Строгого дресс-кода нет, но нам будет очень приятно видеть вас нарядными и праздничными.<br>
+        Этот день особенный — давайте создадим красивую атмосферу вместе!
+      </p>
+    </section>
+
+    
+
+    <section class="section section--rsvp reveal" id="rsvp">
+      <h2 class="section__title">Подтвердите ваше присутствие</h2>
+      <form class="rsvp-form" id="rsvpForm" novalidate>
+        <label class="field">
+          <span class="field__label">Ваше имя и фамилия</span>
+          <input class="field__control" type="text" name="fullName" required>
+        </label>
+
+        <fieldset class="field-group">
+          <legend class="field__label">Вы сможете присутствовать?</legend>
+          <label class="choice">
+            <input type="radio" name="attendance" value="Да, буду" required>
+            <span>Да, буду</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="attendance" value="К сожалению, не смогу" required>
+            <span>К сожалению, не смогу</span>
+          </label>
+        </fieldset>
+
+        <label class="field">
+          <span class="field__label">Что предпочитаете</span>
+          <select class="field__control" name="drink" required>
+            <option value="" selected disabled>Выберите вариант</option>
+            <option value="Красное вино">Красное вино</option>
+            <option value="Белое вино">Белое вино</option>
+            <option value="Шампанское">Шампанское</option>
+            <option value="Крепкие напитки">Крепкие напитки</option>
+            <option value="Не пью алкоголь">Не пью алкоголь</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span class="field__label">Комментарий (по желанию)</span>
+          <textarea class="field__control field__control--textarea" name="comment" rows="3"></textarea>
+        </label>
+
+        <button class="submit-btn" type="submit">Отправить ответ</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section section--calendar reveal" id="calendar">
+      <h2 class="section__title">21 марта</h2>
+      <div class="calendar" role="img" aria-label="Календарь марта 2026 года. Дата свадьбы: 21 марта">
+        <p class="calendar__month">март 2026</p>
+        <div class="calendar__weekdays" aria-hidden="true">
+          <span>пн</span><span>вт</span><span>ср</span><span>чт</span><span>пт</span><span>сб</span><span>вс</span>
+        </div>
+        <div class="calendar__grid" aria-hidden="true">
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell calendar__cell--empty"></span>
+          <span class="calendar__cell">1</span>
+          <span class="calendar__cell">2</span>
+          <span class="calendar__cell">3</span>
+          <span class="calendar__cell">4</span>
+          <span class="calendar__cell">5</span>
+          <span class="calendar__cell">6</span>
+          <span class="calendar__cell">7</span>
+          <span class="calendar__cell">8</span>
+          <span class="calendar__cell">9</span>
+          <span class="calendar__cell">10</span>
+          <span class="calendar__cell">11</span>
+          <span class="calendar__cell">12</span>
+          <span class="calendar__cell">13</span>
+          <span class="calendar__cell">14</span>
+          <span class="calendar__cell">15</span>
+          <span class="calendar__cell">16</span>
+          <span class="calendar__cell">17</span>
+          <span class="calendar__cell">18</span>
+          <span class="calendar__cell">19</span>
+          <span class="calendar__cell">20</span>
+          <span class="calendar__cell calendar__cell--heart" aria-label="21 марта">21</span>
+          <span class="calendar__cell">22</span>
+          <span class="calendar__cell">23</span>
+          <span class="calendar__cell">24</span>
+          <span class="calendar__cell">25</span>
+          <span class="calendar__cell">26</span>
+          <span class="calendar__cell">27</span>
+          <span class="calendar__cell">28</span>
+          <span class="calendar__cell">29</span>
+          <span class="calendar__cell">30</span>
+          <span class="calendar__cell">31</span>
+        </div>
+        <div class="calendar__underline" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    С любовью, Наталья и Олег
+  </footer>
+
+  <script src="./script.js?v=20260303-10" defer></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÐÐ°ÑÐ°Ð»ÑÑ Ð¸ ÐÐ»ÐµÐ³ | ÐÑÐ¸Ð³Ð»Ð°ÑÐµÐ½Ð¸Ðµ Ð½Ð° ÑÐ²Ð°Ð´ÑÐ±Ñ</title>
+  <meta
+    name="description"
+    content="ÐÑÐ¸Ð³Ð»Ð°ÑÐµÐ½Ð¸Ðµ Ð½Ð° ÑÐ²Ð°Ð´ÑÐ±Ñ ÐÐ°ÑÐ°Ð»ÑÐ¸ Ð¸ ÐÐ»ÐµÐ³Ð°. 21 Ð¼Ð°ÑÑÐ°, Ð ÐµÑÑÐ¾Ð±Ð°Ñ Â«ÐÑÐ±Ð¸ÐºÂ», Ð¯ÐºÑÑÑÐº."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+    <span class="music-toggle__icon" aria-hidden="true">âª</span>
+    <span class="music-toggle__label">ÐÐºÐ»ÑÑÐ¸ÑÑ ÑÐ²Ð°Ð´ÐµÐ±Ð½ÑÑ Ð¼ÑÐ·ÑÐºÑ</span>
+  </button>
+
+  <audio id="weddingMusic" loop preload="none">
+    <source src="audio/wedding.mp3" type="audio/mpeg">
+    <source
+      src="https://assets.mixkit.co/music/672/672.mp3"
+      type="audio/mpeg"
+    >
+    <source
+      src="https://assets.mixkit.co/music/37/37.mp3"
+      type="audio/mpeg"
+    >
+    <source
+      src="https://assets.mixkit.co/music/43/43.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+  <header class="hero reveal" id="top">
+    <p class="hero__kicker">wedding day</p>
+    <h1 class="hero__title">ÐÐ°ÑÐ°Ð»ÑÑ <span>Ð¸</span> ÐÐ»ÐµÐ³</h1>
+    <p class="hero__meta">21 Ð¼Ð°ÑÑÐ° 2026</p>
+    <p class="hero__meta hero__meta--accent">Ð ÐµÑÑÐ¾Ð±Ð°Ñ Â«ÐÑÐ±Ð¸ÐºÂ», Ð¯ÐºÑÑÑÐº</p>
+    <a class="hero__cta" href="#rsvp">ÐÐ¾Ð´ÑÐ²ÐµÑÐ´Ð¸ÑÑ ÑÑÐ°ÑÑÐ¸Ðµ</a>
+    <div class="hero__photo-wrap">
+      <img class="hero__photo" src="img/optimized/hero-main.jpg" alt="ÐÐ°ÑÐ°Ð»ÑÑ Ð¸ ÐÐ»ÐµÐ³">
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section reveal" id="story">
+      <h2 class="section__title">ÐÐ¾ÑÐ¾Ð³Ð¸Ðµ ÑÐ¾Ð´Ð½ÑÐµ Ð¸ Ð´ÑÑÐ·ÑÑ</h2>
+      <div class="collage">
+        <img src="img/optimized/DSC06246.jpg" alt="Ð¤Ð¾ÑÐ¾Ð³ÑÐ°ÑÐ¸Ñ ÐÐ°ÑÐ°Ð»ÑÐ¸ Ð¸ ÐÐ»ÐµÐ³Ð° 1">
+        <img src="img/optimized/DSC06267.jpg" alt="Ð¤Ð¾ÑÐ¾Ð³ÑÐ°ÑÐ¸Ñ ÐÐ°ÑÐ°Ð»ÑÐ¸ Ð¸ ÐÐ»ÐµÐ³Ð° 2">
+        <img src="img/optimized/DSC06296.jpg" alt="Ð¤Ð¾ÑÐ¾Ð³ÑÐ°ÑÐ¸Ñ ÐÐ°ÑÐ°Ð»ÑÐ¸ Ð¸ ÐÐ»ÐµÐ³Ð° 3">
+        <img src="img/optimized/DSC06363.jpg" alt="Ð¤Ð¾ÑÐ¾Ð³ÑÐ°ÑÐ¸Ñ ÐÐ°ÑÐ°Ð»ÑÐ¸ Ð¸ ÐÐ»ÐµÐ³Ð° 4">
+      </div>
+      <p class="section__text">
+        21 Ð¼Ð°ÑÑÐ° ÑÐ¾ÑÑÐ¾Ð¸ÑÑÑ Ð´ÐµÐ½Ñ, ÐºÐ¾ÑÐ¾ÑÑÐ¹ ÑÑÐ°Ð½ÐµÑ Ð½Ð°ÑÐ°Ð»Ð¾Ð¼ Ð½Ð°ÑÐµÐ¹ ÑÐµÐ¼ÐµÐ¹Ð½Ð¾Ð¹ Ð¸ÑÑÐ¾ÑÐ¸Ð¸.
+        ÐÑ Ñ ÑÐ°Ð´Ð¾ÑÑÑÑ Ð¿ÑÐ¸Ð³Ð»Ð°ÑÐ°ÐµÐ¼ Ð²Ð°Ñ ÑÐ°Ð·Ð´ÐµÐ»Ð¸ÑÑ ÑÑÐ¾Ñ Ð¿ÑÐ°Ð·Ð´Ð½Ð¸Ðº Ð»ÑÐ±Ð²Ð¸ Ð²Ð¼ÐµÑÑÐµ Ñ Ð½Ð°Ð¼Ð¸ Ð² ÑÐµÑÑÐ¾ÑÐ°Ð½Ðµ Â«ÐÑÐ±Ð¸ÐºÂ».
+        ÐÐ°ÑÐµ Ð¿ÑÐ¸ÑÑÑÑÑÐ²Ð¸Ðµ - ÑÐ°Ð¼ÑÐ¹ Ð³Ð»Ð°Ð²Ð½ÑÐ¹ Ð¿Ð¾Ð´Ð°ÑÐ¾Ðº Ð´Ð»Ñ Ð½Ð°Ñ.
+      </p>
+    </section>
+
+    <section class="section reveal" id="timing">
+      <h2 class="section__title">Ð¢Ð°Ð¹Ð¼Ð¸Ð½Ð³ Ð´Ð½Ñ</h2>
+      <ul class="timeline">
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T16:00:00+09:00">16:00</time>
+          <p class="timeline__event">Ð¡Ð±Ð¾Ñ Ð³Ð¾ÑÑÐµÐ¹</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T17:00:00+09:00">17:00</time>
+          <p class="timeline__event">ÐÐ°ÑÐ°Ð»Ð¾ ÑÐ¾ÑÐ¶ÐµÑÑÐ²Ð°</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T21:00:00+09:00">21:00</time>
+          <p class="timeline__event">ÐÑÐ°Ð·Ð´Ð½Ð¸ÑÐ½ÑÐ¹ ÑÐ¾ÑÑ</p>
+        </li>
+        <li class="timeline__item">
+          <time class="timeline__time" datetime="2026-03-21T23:00:00+09:00">23:00</time>
+          <p class="timeline__event">ÐÐ°Ð²ÐµÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐµÑÐ°</p>
+        </li>
+      </ul>
+      <p class="section__hint">
+        ÐÑÐ´ÐµÐ¼ ÑÐ°Ð´Ñ, ÐµÑÐ»Ð¸ Ð²Ñ Ð¿ÑÐ¸ÐµÐ´ÐµÑÐµ Ðº Ð½Ð°ÑÐ°Ð»Ñ ÑÐ±Ð¾ÑÐ° Ð³Ð¾ÑÑÐµÐ¹, ÑÑÐ¾Ð±Ñ Ð½Ð¸ÑÐµÐ³Ð¾ Ð½Ðµ Ð¿ÑÐ¾Ð¿ÑÑÑÐ¸ÑÑ.
+      </p>
+    </section>
+
+    <section class="section reveal" id="location">
+      <h2 class="section__title">ÐÐµÑÑÐ¾ Ð¿ÑÐ¾Ð²ÐµÐ´ÐµÐ½Ð¸Ñ</h2>
+      <p class="section__text section__text--center section__text--strong">Ð ÐµÑÑÐ¾Ð±Ð°Ñ Â«ÐÑÐ±Ð¸ÐºÂ»</p>
+      <p class="section__text section__text--center">Ð³. Ð¯ÐºÑÑÑÐº, ÑÐ»Ð¸ÑÐ° ÐÑÐ¶Ð°ÐºÐ¾Ð²Ð°, Ð´Ð¾Ð¼ 10</p>
+      <img class="mood-photo" src="photos_preview/mood.jpeg" alt="ÐÑÐ¼Ð¾ÑÑÐµÑÐ° Ð¼ÐµÑÑÐ° Ð¿ÑÐ¾Ð²ÐµÐ´ÐµÐ½Ð¸Ñ">
+    </section>
+
+    <section class="section reveal" id="format">
+      <h2 class="section__title">Ð¤Ð¾ÑÐ¼Ð°Ñ Ð²ÐµÑÐµÑÐ°</h2>
+      <p class="section__text">
+        ÐÑ ÑÐ¾ÑÐ¸Ð¼ Ð¿ÑÐ¾Ð²ÐµÑÑÐ¸ ÑÑÐ¾Ñ Ð²ÐµÑÐµÑ Ð² ÑÑÐ¿Ð»Ð¾Ð¹ Ð²Ð·ÑÐ¾ÑÐ»Ð¾Ð¹ Ð°ÑÐ¼Ð¾ÑÑÐµÑÐµ, Ð¿Ð¾ÑÑÐ¾Ð¼Ñ Ð¿ÑÐ°Ð·Ð´Ð½Ð¸Ðº Ð¿Ð»Ð°Ð½Ð¸ÑÑÐµÑÑÑ Ð±ÐµÐ· Ð´ÐµÑÐµÐ¹.
+        ÐÐ°Ð´ÐµÐµÐ¼ÑÑ Ð½Ð° Ð²Ð°ÑÐµ Ð¿Ð¾Ð½Ð¸Ð¼Ð°Ð½Ð¸Ðµ.
+      </p>
+    </section>
+
+    <section class="section section--rsvp reveal" id="rsvp">
+      <h2 class="section__title">ÐÐ¾Ð´ÑÐ²ÐµÑÐ´Ð¸ÑÐµ Ð²Ð°ÑÐµ Ð¿ÑÐ¸ÑÑÑÑÑÐ²Ð¸Ðµ</h2>
+      <form class="rsvp-form" id="rsvpForm" novalidate>
+        <label class="field">
+          <span class="field__label">ÐÐ°ÑÐµ Ð¸Ð¼Ñ Ð¸ ÑÐ°Ð¼Ð¸Ð»Ð¸Ñ</span>
+          <input class="field__control" type="text" name="fullName" required>
+        </label>
+
+        <fieldset class="field-group">
+          <legend class="field__label">ÐÑ ÑÐ¼Ð¾Ð¶ÐµÑÐµ Ð¿ÑÐ¸ÑÑÑÑÑÐ²Ð¾Ð²Ð°ÑÑ?</legend>
+          <label class="choice">
+            <input type="radio" name="attendance" value="ÐÐ°, Ð±ÑÐ´Ñ" required>
+            <span>ÐÐ°, Ð±ÑÐ´Ñ</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="attendance" value="Ð ÑÐ¾Ð¶Ð°Ð»ÐµÐ½Ð¸Ñ, Ð½Ðµ ÑÐ¼Ð¾Ð³Ñ" required>
+            <span>Ð ÑÐ¾Ð¶Ð°Ð»ÐµÐ½Ð¸Ñ, Ð½Ðµ ÑÐ¼Ð¾Ð³Ñ</span>
+          </label>
+        </fieldset>
+
+        <label class="field">
+          <span class="field__label">Ð§ÑÐ¾ Ð¿ÑÐµÐ´Ð¿Ð¾ÑÐ¸ÑÐ°ÐµÑÐµ</span>
+          <select class="field__control" name="drink" required>
+            <option value="" selected disabled>ÐÑÐ±ÐµÑÐ¸ÑÐµ Ð²Ð°ÑÐ¸Ð°Ð½Ñ</option>
+            <option value="ÐÑÐ°ÑÐ½Ð¾Ðµ Ð²Ð¸Ð½Ð¾">ÐÑÐ°ÑÐ½Ð¾Ðµ Ð²Ð¸Ð½Ð¾</option>
+            <option value="ÐÐµÐ»Ð¾Ðµ Ð²Ð¸Ð½Ð¾">ÐÐµÐ»Ð¾Ðµ Ð²Ð¸Ð½Ð¾</option>
+            <option value="Ð¨Ð°Ð¼Ð¿Ð°Ð½ÑÐºÐ¾Ðµ">Ð¨Ð°Ð¼Ð¿Ð°Ð½ÑÐºÐ¾Ðµ</option>
+            <option value="ÐÑÐµÐ¿ÐºÐ¸Ðµ Ð½Ð°Ð¿Ð¸ÑÐºÐ¸">ÐÑÐµÐ¿ÐºÐ¸Ðµ Ð½Ð°Ð¿Ð¸ÑÐºÐ¸</option>
+            <option value="ÐÐµ Ð¿ÑÑ Ð°Ð»ÐºÐ¾Ð³Ð¾Ð»Ñ">ÐÐµ Ð¿ÑÑ Ð°Ð»ÐºÐ¾Ð³Ð¾Ð»Ñ</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span class="field__label">ÐÐ¾Ð¼Ð¼ÐµÐ½ÑÐ°ÑÐ¸Ð¹ (Ð¿Ð¾ Ð¶ÐµÐ»Ð°Ð½Ð¸Ñ)</span>
+          <textarea class="field__control field__control--textarea" name="comment" rows="3"></textarea>
+        </label>
+
+        <button class="submit-btn" type="submit">ÐÑÐ¿ÑÐ°Ð²Ð¸ÑÑ Ð¾ÑÐ²ÐµÑ</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section section--countdown reveal" id="countdown">
+      <h2 class="section__title">Ð£Ð²Ð¸Ð´Ð¸Ð¼ÑÑ ÑÐµÑÐµÐ·</h2>
+      <div class="countdown" aria-live="polite">
+        <div class="countdown__item">
+          <span class="countdown__value" id="days">00</span>
+          <span class="countdown__label">Ð´Ð½ÐµÐ¹</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="hours">00</span>
+          <span class="countdown__label">ÑÐ°ÑÐ¾Ð²</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="minutes">00</span>
+          <span class="countdown__label">Ð¼Ð¸Ð½ÑÑ</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__value" id="seconds">00</span>
+          <span class="countdown__label">ÑÐµÐºÑÐ½Ð´</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Ð¡ Ð»ÑÐ±Ð¾Ð²ÑÑ, ÐÐ°ÑÐ°Ð»ÑÑ Ð¸ ÐÐ»ÐµÐ³
+  </footer>
+
+  <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043" integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg==" data-cf-beacon='{"version":"2024.11.0","token":"cd924dd2b240425f8cc0068f818550eb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+

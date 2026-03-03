@@ -1,0 +1,497 @@
+:root {
+  --bg-main: #f8f2ea;
+  --bg-soft: #fdf9f4;
+  --text-main: #3f3026;
+  --text-soft: #7b6656;
+  --accent: #bf8357;
+  --accent-soft: #e4c3a4;
+  --shadow: 0 16px 40px rgba(95, 63, 42, 0.12);
+  --radius-xl: 2rem;
+  --radius-l: 1.4rem;
+  --container: 64rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--text-main);
+  background: var(--bg-main);
+  overflow-x: hidden;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(233, 199, 169, 0.55), transparent 32%),
+    radial-gradient(circle at 88% 4%, rgba(244, 220, 189, 0.52), transparent 28%),
+    radial-gradient(circle at 80% 88%, rgba(219, 183, 149, 0.4), transparent 30%),
+    linear-gradient(180deg, #fdfaf6 0%, #f8efe5 100%);
+}
+
+.music-toggle {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 20;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 249, 241, 0.92);
+  color: var(--text-main);
+  font: 600 0.82rem/1 "Cormorant Garamond", serif;
+  box-shadow: 0 8px 22px rgba(123, 92, 68, 0.18);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(123, 92, 68, 0.22);
+}
+
+.music-toggle[aria-pressed="true"] {
+  background: #f8e8d8;
+}
+
+.music-toggle__icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 5.8rem 1.2rem 3rem;
+  text-align: center;
+}
+
+.hero__kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.hero__title {
+  margin: 0.8rem 0 0;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: clamp(3rem, 15vw, 6.4rem);
+  line-height: 0.95;
+  color: #5a3d2b;
+}
+
+.hero__title span {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 0.48em;
+}
+
+.hero__meta {
+  margin: 0.9rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
+  color: var(--text-main);
+}
+
+.hero__meta--accent {
+  margin-top: 0.3rem;
+  font-size: clamp(1.05rem, 4vw, 1.35rem);
+  color: var(--text-soft);
+}
+
+.hero__photo-wrap {
+  width: min(26rem, 100%);
+  margin: 1.8rem auto 0;
+  border-radius: clamp(1.2rem, 4vw, 2.1rem);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.hero__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.content {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 1.2rem 3rem;
+}
+
+.section {
+  margin-top: 2.6rem;
+  padding: clamp(1.35rem, 3.3vw, 2.2rem);
+  border-radius: var(--radius-l);
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.55), rgba(255, 247, 237, 0.35));
+}
+
+.section__title {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  line-height: 0.98;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #56392a;
+}
+
+.section__text {
+  margin: 1rem auto 0;
+  max-width: 40rem;
+  font-size: clamp(1rem, 3.5vw, 1.14rem);
+  text-align: center;
+  color: var(--text-main);
+}
+
+.section__text--center {
+  text-align: center;
+}
+
+.section__text--strong {
+  font-size: clamp(1.15rem, 4vw, 1.4rem);
+  font-weight: 600;
+}
+
+.section__hint {
+  margin: 1.1rem auto 0;
+  max-width: 33rem;
+  text-align: center;
+  color: var(--text-soft);
+}
+
+.collage {
+  margin: 1.3rem auto 0;
+  max-width: 35rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+#story .section__text {
+  margin-top: 1.6rem;
+}
+
+#story .collage {
+  margin-top: 2.2rem;
+}
+
+.collage img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  border-radius: 1.15rem;
+  box-shadow: 0 10px 16px rgba(82, 58, 41, 0.18);
+}
+
+.collage img:nth-child(1) {
+  transform: rotate(-1.6deg);
+}
+
+.collage img:nth-child(2) {
+  transform: rotate(1.7deg);
+}
+
+.collage img:nth-child(3) {
+  transform: rotate(1.2deg);
+}
+
+.collage img:nth-child(4) {
+  transform: rotate(-1.1deg);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem auto 0;
+  display: grid;
+  gap: 0.7rem;
+  width: min(100%, 42rem);
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.4rem 0.2rem;
+}
+
+.timeline__time {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.25rem, 2rem + 0.9vw, 2.8rem);
+  font-weight: 700;
+  color: #6c4630;
+  white-space: nowrap;
+}
+
+.timeline__event {
+  margin: 0;
+  font-size: clamp(1.55rem, 1.35rem + 0.55vw, 1.95rem);
+  color: var(--text-main);
+}
+
+#timing .timeline,
+#timing .timeline * {
+  font-style: italic;
+}
+
+#timing .section__hint {
+  font-style: italic;
+}
+
+.mood-photo {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-l);
+  object-fit: cover;
+  max-height: 23rem;
+  box-shadow: var(--shadow);
+}
+
+.section--rsvp {
+  background: linear-gradient(180deg, rgba(255, 246, 235, 0.52), rgba(255, 252, 248, 0.32));
+}
+
+.rsvp-form {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 0.92rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field__label {
+  font-size: 0.97rem;
+  color: #60483a;
+  font-weight: 600;
+}
+
+.field__control {
+  width: 100%;
+  border: 0;
+  border-radius: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  background: #fff9f1;
+  color: var(--text-main);
+  font: 500 1rem/1.2 "Cormorant Garamond", serif;
+  box-shadow: inset 0 0 0 1px rgba(198, 149, 109, 0.26);
+}
+
+.field__control:focus {
+  outline: none;
+  box-shadow:
+    inset 0 0 0 1px rgba(183, 125, 88, 0.7),
+    0 0 0 3px rgba(219, 176, 144, 0.32);
+}
+
+.field__control--textarea {
+  resize: vertical;
+  min-height: 6.1rem;
+}
+
+.field-group {
+  margin: 0;
+  padding: 0.1rem 0 0;
+  border: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.1rem;
+}
+
+.choice input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #b57752;
+}
+
+.submit-btn {
+  margin-top: 0.3rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  background: linear-gradient(135deg, #b97e58 0%, #c7916a 100%);
+  color: #fff;
+  font: 600 1rem/1 "Cormorant Garamond", serif;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 11px 20px rgba(151, 100, 64, 0.22);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+  cursor: progress;
+  opacity: 0.65;
+  transform: none;
+}
+
+.form-status {
+  min-height: 1.2em;
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: #83563a;
+}
+
+.section--calendar {
+  margin-bottom: 2.4rem;
+  background: linear-gradient(180deg, rgba(255, 249, 240, 0.48), rgba(255, 243, 229, 0.3));
+}
+
+.calendar {
+  margin: 1.1rem auto 0;
+  width: min(100%, 30rem);
+  padding: 1rem 1rem 1.15rem;
+  border-radius: 1.1rem;
+  background: rgba(255, 252, 247, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(108, 70, 48, 0.08);
+}
+
+.calendar__month {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.95rem;
+  color: #6d5646;
+}
+
+.calendar__weekdays {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+.calendar__weekdays span {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7f6756;
+  text-transform: lowercase;
+}
+
+.calendar__grid {
+  margin-top: 0.55rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+.calendar__cell {
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  font-size: 1.05rem;
+  color: #5f4332;
+}
+
+.calendar__cell--empty {
+  visibility: hidden;
+}
+
+.calendar__cell--heart {
+  background: transparent;
+  color: #1f1713;
+  font-weight: 700;
+  font-size: 1.22rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.calendar__cell--heart::before {
+  content: "\2665";
+  position: absolute;
+  left: 50%;
+  top: 61%;
+  transform: translate(-50%, -50%);
+  font-size: 3.4rem;
+  line-height: 1;
+  color: #d48a8b;
+  z-index: -1;
+  filter: drop-shadow(0 1px 1px rgba(106, 56, 56, 0.22));
+}
+
+.calendar__underline {
+  margin: 0.9rem auto 0;
+  width: 6.2rem;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(108, 70, 48, 0.38) 20%, rgba(108, 70, 48, 0.38) 80%, transparent 100%);
+}
+
+.footer {
+  text-align: center;
+  padding: 0 1rem 2.3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  color: #6b4c3a;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 48rem) {
+  .music-toggle {
+    right: 2rem;
+    top: 1.2rem;
+  }
+
+  .hero {
+    padding-top: 6.8rem;
+  }
+
+  .section {
+    margin-top: 3.1rem;
+  }
+
+  .calendar {
+    width: min(100%, 31rem);
+  }
+}
